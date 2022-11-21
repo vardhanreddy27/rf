@@ -1,6 +1,15 @@
 .top{
-    padding-top: 9px;
+    padding-top: 13px;
 }
 .left{
-    padding-left: 13px!important;
+    padding-left: 5px!important;
+}
+.ss{
+    width: 2rem!important;
+    height: 20px;
+}.s{
+    height: 20px;
+}
+.th{
+    margin-top: 3px;
 }
