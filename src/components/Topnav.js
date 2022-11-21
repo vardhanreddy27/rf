@@ -15,7 +15,7 @@ function Topnav() {
     <img src={logo} height={45}/>
     </div>
     <div className="col top d-flex flex-row-reverse">
-   <div className='right'>  <BiShoppingBag  className='m-1'/><CgProfile className='m-1'/></div> 
+   <div className='right'>  <BiShoppingBag  className='m-1'/><CgProfile className='m-1 ms-3'/></div> 
     </div>
   </div>
 </div>

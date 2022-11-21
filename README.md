@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+to get abhi code
+git pull
+git rebase -i origin/dev
+
+to add my code to my branch
+git add .
+git commit -m "Message over here"
+git remote add origin https://github.com/vardhanreddy27/tablebooking.git
+git push --set-upstream origin master
