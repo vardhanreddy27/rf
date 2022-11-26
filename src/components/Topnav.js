@@ -6,7 +6,7 @@ import logo from '../../src/rf.png'
 function Topnav() {
   return (
     <>
-     <div className="container">
+     <div className="container mt-1">
   <div className="row">
     <div className="col top">
      <div className='left'><FiMenu className='s'/>   </div> 
@@ -15,7 +15,7 @@ function Topnav() {
     <img src={logo} height={47} className="th"/>
     </div>
     <div className="col top d-flex flex-row-reverse">
-   <div className='right'>  <BiShoppingBag className='mt-1 mb-1 ss'/><CgProfile  className='m-1 ms-3 s'/></div> 
+   <div className='right'>  <BiShoppingBag className='mt-1 mb-1 ss'/><CgProfile  className='m-1 s'/></div> 
     </div>
   </div>
 </div>
