@@ -15,3 +15,27 @@
 .th{
     margin-top: 3px;
 }
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.1rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.form-control{
+    background-color: rgb(235, 236, 240)!important;
+}
+.form-control:focus {border-color:rgb(246, 246, 246)!important;
+    -webkit-box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        box-shadow: none!important;
+    }
