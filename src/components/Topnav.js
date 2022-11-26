@@ -2,7 +2,7 @@ import React from 'react'
 import { FiMenu } from 'react-icons/fi';
 import { BiShoppingBag } from 'react-icons/bi';
 import { CgProfile } from 'react-icons/cg';
-import logo from '../../src/rf.png'
+import logo from '../../src/rflogo.png'
 function Topnav() {
   return (
     <>

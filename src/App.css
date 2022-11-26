@@ -39,3 +39,9 @@
         -moz-box-shadow: none!important;
         box-shadow: none!important;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+           .font{
+            font-family: 'Secular One', sans-serif;
+            color: #eac501;}
+            BODY{
+                background-color: #f9f9f9ba;            }
