@@ -42,6 +42,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
            .font{
             font-family: 'Secular One', sans-serif;
-            color: #eac501;}
+            color: #101010;}
+            .fcolor{
+                color: #444444!important;}
             BODY{
-                background-color: #f9f9f9ba;            }
+                background-color: #f9f9f9ba;  
+                
+                 }
+                 .row {
+                    --bs-gutter-x: 0rem!important;}
