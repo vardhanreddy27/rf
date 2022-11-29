@@ -71,9 +71,13 @@
                                           .a{
                                             font-size: 1rem!important;
                                           }
-                                    .active1{
-                                        color: #dad219!important;
-                                    }
+                                          .active1{
+                                            color: black!important;
+                                        }  .active2{
+                                            color: rgb(0 0 0 / 61%)!important;
+                                        }  .active3{
+                                            color: rgb(0 0 0 / 61%)!important;
+                                        }
                                     .sos{         margin-bottom: 0rem!important;
 
 
