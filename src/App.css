@@ -60,6 +60,21 @@
                             margin-right: 0px!important;
                         }
                         .pad{
-                            margin-bottom: -0.3rem!important;
+                            margin-bottom: 0rem!important;
 
-                        }
+                                          }
+                                          .sas{
+                                            font-size: 1rem!important;
+                                            margin-bottom: 0rem!important;
+                                          }
+
+                                          .a{
+                                            font-size: 1rem!important;
+                                          }
+                                    .active1{
+                                        color: #dad219!important;
+                                    }
+                                    .sos{         margin-bottom: 0rem!important;
+
+
+                                    }
