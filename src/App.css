@@ -40,7 +40,12 @@
     pointer-events: none;
     color: #aaa;
 }
+.bot{
+    height: 100px;
 
+}
+.mypc1{
+    font-weight: 700;}
 .hh{
     height: 255px!important;
     width: 100%!important;

@@ -6,8 +6,9 @@ function Off() {
 
 < div className=' p-3 '>
 <div className='row text-center mt-1 mb-3'>
-    <div className='col-12'><p className='font fcolor'>BUDGET BUYS</p></div>
     <div className='col-12'><h2 className='font'>The best wallet-friendly styles</h2></div>
+    <div className='col-12'><p className='font fcolor'>BUDGET BUYS</p></div>
+
 </div>
 <div className='row'>
 <div className='col myrow'><div className='row'>
@@ -51,7 +52,6 @@ function Off() {
     <div className='col-2'><MdArrowForwardIos className='mgh'/></div>
     </div></div> 
 </div>  
-<div className='mb-5'> <pre> </pre></div>
 </div>
     )
 }

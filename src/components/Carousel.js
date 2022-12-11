@@ -20,7 +20,9 @@ export default function App() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-      
+        autoplay={{
+          delay: 2500,
+        }}
         pagination={{
           clickable: true,
         }}

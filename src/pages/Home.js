@@ -7,6 +7,7 @@ import Navbarbottom from '../components/Navbarbottom';
 import Carousel from '../components/Carousel';
 import Features from '../components/Features';
 import Off from '../components/Off';
+import Classic from '../components/Classic';
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
    <img src={banner} width="100%" height="100%" /></div>
    <Offers />
    <Off />
+   <Classic />
    <Navbarbottom />
 
     </>

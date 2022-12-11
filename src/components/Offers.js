@@ -10,8 +10,8 @@ import winter from '../../src/winter.png';
 function Offers() {
   return (
 <div className='fluid-container mtp text-center mt-3'>
-<h1 className='font'>GET PARTY STARTED! </h1>
-<h6 className='font fcolor'>Offers Like Never Before </h6>
+<h1 className='font'>Get Party Started! </h1>
+<h6 className='font fcolor'>OFFERS LIKE NEVER BEFORE </h6>
 
 <div className='row mt-3'>
 <div class="col"><img src={tshirt} alt="t shirts" width="100%" height="100%" /></div>
