@@ -8,6 +8,7 @@ import Carousel from '../components/Carousel';
 import Features from '../components/Features';
 import Off from '../components/Off';
 import Classic from '../components/Classic';
+import Delivery from '../components/Delivery';
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
    <Offers />
    <Off />
    <Classic />
+   <Delivery />
    <Navbarbottom />
 
     </>

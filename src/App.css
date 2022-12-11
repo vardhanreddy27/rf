@@ -44,6 +44,20 @@
     height: 100px;
 
 }
+.trt{    position: relative!important;
+
+    bottom: 5px!important;
+}
+.mtv{
+    margin-top: 5rem!important;
+}
+.bbt{
+    position: relative!important;
+    height: 7%;}
+.vdo {
+    margin-top: 4rem;
+    height: 38%;
+}
 .mypc1{
     font-weight: 700;}
 .hh{

@@ -68,7 +68,6 @@ function Classic() {
 
 
 
-<div className='bot'></div>
 
 </>
     )
