@@ -6,7 +6,11 @@ function Delivery() {
 <>
 <div className='row mt-5'>
 <div className='col-6  text-center'> 
-<video width="200" height="200"   loop={true} muted={true} autoPlay={true} playsinline={true}  >
+<video width="200" height="200"    autoPlay={true} 
+    loop={true}
+    controls={false} 
+    playsInline
+    muted   >
       <source src={vdo} type="video/mp4"/>
      </video></div>
 <div className='col-6 p-1  mt-3 '>
