@@ -5,6 +5,8 @@ import banner from '../../src/banner.png';
 import Offers from '../components/Offers';
 import Navbarbottom from '../components/Navbarbottom';
 import Carousel from '../components/Carousel';
+import Features from '../components/Features';
+import Off from '../components/Off';
 
 function Home() {
   return (
@@ -13,8 +15,10 @@ function Home() {
    <Searchbar />
    <div className='fluid-container mt-2'>
    <img src={banner} width="100%" height="100%" /></div>
-   <Offers />
+   <Features />
    <Carousel />
+   <Offers />
+   <Off />
    <Navbarbottom />
 
     </>

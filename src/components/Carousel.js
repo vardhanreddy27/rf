@@ -1,38 +1,38 @@
-import React from 'react'
-import banner from '../../src/banner.png';
-import banner2 from '../../src/b11.jpg';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import banner1 from "../../src/banner.jpg";
+import banner3 from "../../src/car3.png";
+import banner2 from "../../src/b11.jpg";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-function Carousel() {
+import "../../src/styles.css";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
+
+export default function App() {
   return (
     <>
-<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-  <ol className="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img className="d-block w-100" src={banner} alt="First slide" />
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src={banner2}  alt="Second slide" />
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src={banner}  alt="Third slide" />
-    </div>
-  </div>
-  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="sr-only">Previous</span>
-  </a>
-  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="sr-only">Next</span>
-  </a>
-</div>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+      
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide><img src={banner1}alt="kk" /></SwiperSlide>
+        <SwiperSlide><img src={banner2}alt="kk" /></SwiperSlide>
+        <SwiperSlide><img src={banner3}alt="kk" /></SwiperSlide>
+    
+      </Swiper>
     </>
-  )
+  );
 }
-
-export default Carousel
