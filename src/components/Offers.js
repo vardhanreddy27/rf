@@ -9,7 +9,7 @@ import winter from '../../src/winter.png';
 
 function Offers() {
   return (
-<div className='fluid-container text-center mt-3'>
+<div className='fluid-container mtp text-center mt-3'>
 <h1 className='font'>GET PARTY STARTED! </h1>
 <h6 className='font fcolor'>Offers Like Never Before </h6>
 

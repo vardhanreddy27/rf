@@ -7,9 +7,9 @@ function Features() {
   return (
 <>
 <div className='row text-center mt-1 p-3 '>
-<div className='col'><GiTakeMyMoney className='six' /><p className='font fcolor'>Cash on Delivery</p></div>
-<div className='col'><TbTruckReturn className='six' /><p className='font fcolor'>Easy Returns</p></div>
-<div className='col'><MdOutlineStyle className='six' /><p className='font fcolor'>2000+ Brands</p></div>
+<div className='col'><GiTakeMyMoney className='six' /><p className=' fcolor'>Cash on Delivery</p></div>
+<div className='col'><TbTruckReturn className='six' /><p className=' fcolor'>Easy Returns</p></div>
+<div className='col'><MdOutlineStyle className='six' /><p className=' fcolor'>2000+ Brands</p></div>
 </div>
 
 </>  )
