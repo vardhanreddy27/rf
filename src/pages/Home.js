@@ -12,12 +12,12 @@ function Home() {
   return (
     <>
    <Topnav />
-   <Searchbar />
-   <div className='fluid-container mt-2'>
-   <img src={banner} width="100%" height="100%" /></div>
+   <Searchbar />   <Carousel />
+
+   
    <Features />
-   <Carousel />
-   <Offers />
+   <Offers /><div className='fluid-container mt-2'>
+   <img src={banner} width="100%" height="100%" /></div>
    <Off />
    <Navbarbottom />
 
