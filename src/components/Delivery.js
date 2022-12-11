@@ -15,7 +15,7 @@ function Delivery() {
      </video></div>
 <div className='col-6 p-1  mt-3 '>
         <h2 >Express Shipping</h2>
-        <p>Order now and get your orders within 24 hours.</p>
+        <p className='d-inline'>Order now and get your orders within </p><p className='d-inline font-weight-bold'>24 hours.</p>
         <button type="button" className=" mt-2 btn btn-secondary"><p className=''>Shop Now</p></button>
 </div>
 </div>

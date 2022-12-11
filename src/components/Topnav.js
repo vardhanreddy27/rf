@@ -5,7 +5,7 @@ import { CgProfile } from 'react-icons/cg';
 import logo from '../../src/rflogo.png'
 function Topnav() {
   return (
-    <>
+    <><nav class="navbar sticky-top  bg-light" >
      <div className="container mt-1">
   <div className="row">
     <div className="col top">
@@ -18,7 +18,7 @@ function Topnav() {
    <div className='right'>  <BiShoppingBag className='mt-1 mb-1 ss'/><CgProfile  className='m-1 s'/></div> 
     </div>
   </div>
-</div>
+</div></nav>
     </>
   )
 }
