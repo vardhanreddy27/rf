@@ -12,8 +12,8 @@ function LoginSignup() {
      <div className='left'><IoArrowBackOutline className='s'/>  </div> </Link> 
     </div> 
 <div className='row text-center mt-4 pt-3 pb-3 bdr'>
-<div className='col-6 we'>Sign Up</div>
-<div className='col-6 we under'>Sign In</div>
+<div className='col-6 we '><Link to="/Signup">Sign Up</Link></div>
+<div className='col-6 we under'><Link to="/LoginSignup" className='under'>Sign In</Link></div>
 </div>
 <div className='container mt-5 ps-5 pe-5'>
   <h1>User Log In</h1>
