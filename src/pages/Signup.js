@@ -31,11 +31,12 @@ function Signup() {
   </div>
   <div className="form-group">
     <input type="password" className="form-control spp  p-3" id="exampleInputPassword12" placeholder="Confirm Password" />
-  </div>
+  </div><div className='mtp'></div>
+
   <nav className="navbar fixed-bottom navbar-light bdr ">
   <div className="container">
   <div className='row'>
-  <div className='col-10 mypcd1   ps-2'>agree to terms and conditions</div>
+  <div className='col-10 mypcd1  bg-white ps-2'>agree to terms and conditions</div>
   <div className='col-2'><div className="  form-check form-switch">
   <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
 </div></div>
