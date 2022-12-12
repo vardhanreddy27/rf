@@ -1,8 +1,14 @@
 import React from 'react'
+import Topnav from '../components/Topnav'
+import Navbarbottom from '../components/Navbarbottom';
 
 function Profile() {
   return (
-    <div>Profile</div>
+    <>
+       <Topnav />
+profile content goes here ...
+    <Navbarbottom />
+</>
   )
 }
 

@@ -108,13 +108,7 @@
                                           .a{
                                             font-size: 1rem!important;
                                           }
-                                          .active1{
-                                            color: black!important;
-                                        }  .active2{
-                                            color: rgb(0 0 0 / 61%)!important;
-                                        }  .active3{
-                                            color: rgb(0 0 0 / 61%)!important;
-                                        }
+                                          
                                     .sos{         margin-bottom: 0rem!important;
 
 
@@ -137,3 +131,12 @@
 .ba{
     background-color: #ffccd68c;
 }
+.active{
+    color:#000000!important;
+   }
+   a:hover { text-decoration: none!important;
+color: #0000007a!important;}
+   a{
+    text-decoration: none!important;
+    color: #0000007a!important;
+   }

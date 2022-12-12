@@ -22,7 +22,7 @@ function Home() {
    <Off />
    <Classic />
    <Delivery />
-   <Navbarbottom />
+   <Navbarbottom  status="mactive1"/>
 
     </>
   )

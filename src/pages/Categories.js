@@ -8,7 +8,7 @@ function Categories() {
     <>
 <Seminav />   
 <Menu />
-    <Navbarbottom />
+<Navbarbottom />
     </>
   )
 }

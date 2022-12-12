@@ -1,13 +1,15 @@
 import React from 'react'
 import { IoArrowBackOutline } from 'react-icons/io5';
 import { BiShoppingBag } from 'react-icons/bi';
+import {  Link } from 'react-router-dom';
+
 function Seminav() {
   return (
     <><nav class="navbar sticky-top  bg-white" >
      <div className="container mt-1">
   <div className="row">
-    <div className="col top">
-     <div className='left'><IoArrowBackOutline className='s'/>   </div> 
+    <div className="col top"><Link to="/" className="navbar-brand a" >
+     <div className='left'><IoArrowBackOutline className='s'/>  </div> </Link> 
     </div>
     <div className="col  text-center">
     </div>
