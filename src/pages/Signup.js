@@ -16,23 +16,22 @@ function Signup() {
 </div>
 <div className='container mt-5 ps-5 pe-5'>
   <h1>Create an account</h1>
-<form>
-<div className="form-group">
-    <input type="text" className="form-control sp p-3" id="exampleInputName" aria-describedby="name" placeholder="Enter name" />
-  </div>
-  <div className="form-group">
+<form><div className='row'>
+    <div className='col-6 ppp'><div className="form-group">
+    <input type="text" className="form-control spp p-3" id="exampleInputName" aria-describedby="name" placeholder="Enter name" />
+  </div></div>
+  <div className='col-6'><div className="form-group">
     <input type="email" className="form-control spp p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+  </div></div>  </div>
+  <div className="form-group">
+    <input type="number" className="form-control p-3" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder="Enter number" />
   </div>
   <div className="form-group">
-    <input type="number" className="form-control spp p-3" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder="Enter number" />
+    <input type="password" className="form-control p-3" id="exampleInputPassword1" placeholder="Create Password" />
   </div>
   <div className="form-group">
-    <input type="password" className="form-control spp  p-3" id="exampleInputPassword1" placeholder="Create Password" />
+    <input type="password" className="form-control  p-3" id="exampleInputPassword12" placeholder="Confirm Password" />
   </div>
-  <div className="form-group">
-    <input type="password" className="form-control spp  p-3" id="exampleInputPassword12" placeholder="Confirm Password" />
-  </div><div className='mtp'></div>
-
   <nav className="navbar fixed-bottom navbar-light bdr ">
   <div className="container">
   <div className='row'>
