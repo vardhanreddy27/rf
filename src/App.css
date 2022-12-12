@@ -180,9 +180,9 @@ margin-left: 18px;}
 
 }
 .under{
-    text-underline-offset: 16px;
-    text-decoration: underline 5px #4b96e1;
-    color: #4b96e1;
+    text-underline-offset: 16px!important;
+    text-decoration: underline 5px #4b96e1!important;
+    color: #4b96e1!important;
 }
 .we{font-weight: 700;}
 .sp{
