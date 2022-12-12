@@ -12,16 +12,16 @@ function Navbarbottom(props) {
   <div className="container-fluid">
     <div className='row text-center'>
     <div className='col '> <NavLink to="/" activeClassName="active">
-<h5 className='pad'><AiOutlineHome className='active2'/></h5>
+<h5 className='pad'><AiOutlineHome activeClassName="active"/></h5>
 <p className='sos'>   
          Store</p></NavLink></div>
     <div className='col'>
     <NavLink to="/Categories" activeClassName="active">
-<h5 className='pad'><BiCategory className='active2'/></h5>
+<h5 className='pad'><BiCategory activeClassName="active"/></h5>
     <p className='sos'>Categories</p></NavLink></div>
     <div className='col'>
     <NavLink to="/Profile" activeClassName="active">
-<h5 className='pad'><CgProfile className='active3'/></h5>
+<h5 className='pad'><CgProfile activeClassName="active"/></h5>
     <p className='sos'> 
    Account</p></NavLink></div>
     </div>
