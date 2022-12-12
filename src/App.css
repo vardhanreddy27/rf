@@ -131,12 +131,11 @@
 .ba{
     background-color: #ffccd68c;
 }
-.active{
-    color:#000000!important;
-   }
-   a:hover { text-decoration: none!important;
-color: #0000007a!important;}
+
    a{
     text-decoration: none!important;
     color: #0000007a!important;
+   }
+   .active{
+    color:#000000!important;
    }
