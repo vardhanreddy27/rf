@@ -122,8 +122,18 @@
 
 .wd{
     height: 6rem;
-    background-color: #e7e7e7;
 }
 .pop{
     padding-top: 2.5rem;
+}
+.bt{background-color: aliceblue;}
+.yt{background-color: #faebd785;}
+.dg{
+    background-color: #a9a9a93d;
+}
+.nt{
+    background-color: #9ddde95e;
+}
+.ba{
+    background-color: #ffccd68c;
 }
