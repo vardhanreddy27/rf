@@ -6,7 +6,7 @@ function Profile() {
   return (
     <>
        <Topnav />
-profile content goes here ...
+profile content goes here ... after login here it comes
     <Navbarbottom />
 </>
   )

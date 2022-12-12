@@ -2,10 +2,9 @@ import React from 'react'
 import { CgProfile } from 'react-icons/cg';
 import { BiCategory } from 'react-icons/bi';
 import { AiOutlineHome } from 'react-icons/ai';
-import {  Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
-function Navbarbottom(props) {
+function Navbarbottom() {
 
   return (
 <nav className="navbar fixed-bottom navbar-light bg-light">
@@ -20,7 +19,7 @@ function Navbarbottom(props) {
 <h5 className='pad'><BiCategory activeClassName="active"/></h5>
     <p className='sos'>Categories</p></NavLink></div>
     <div className='col'>
-    <NavLink to="/Profile" activeClassName="active">
+    <NavLink to="/LoginSignup" activeClassName="active">
 <h5 className='pad'><CgProfile activeClassName="active"/></h5>
     <p className='sos'> 
    Account</p></NavLink></div>

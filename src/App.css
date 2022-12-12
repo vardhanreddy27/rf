@@ -3,7 +3,28 @@
 }
 .left{
     padding-left: 5px!important;
+    color: black;
+}.sir{
+    
+    width: 3rem!important;
+    height: 3rem;
+color: #df5c5c;
 }
+.sir2{
+    
+    width: 39px!important;
+    height: 39px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-left: 23px;
+    border-radius: 4px;
+}
+.sir1{
+    color: #364ca4;
+    width: 3rem!important;
+    height: 43px;
+margin-left: 18px;}
 .ss{
     width: 2rem!important;
     height: 20px;
@@ -64,12 +85,26 @@
     height: 255px!important;
     width: 100%!important;
 }
+.mypcd{
+    font-weight: 500;
+    height: 60px;
+    }.mypcd1{
+        font-weight: 500;
+        height: 20px;
+        margin-top: 5px!important;
+        }
 
 .mtp{    margin-top: 5rem!important;
 }
-
+.sin{
+    width: 11rem;
+    margin-right:8px ;
+}
 .form-control{
     background-color: rgb(235, 236, 240)!important;
+}hr{
+    margin-left: -1rem!important;
+    width: 27rem!important;
 }
 .form-control:focus {border-color:rgb(246, 246, 246)!important;
     -webkit-box-shadow: none!important;
@@ -139,3 +174,32 @@
    .active{
     color:#000000!important;
    }
+.bdr{
+    border-top: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+
+}
+.under{
+    text-underline-offset: 16px;
+    text-decoration: underline 5px #4b96e1;
+    color: #4b96e1;
+}
+.we{font-weight: 700;}
+.sp{
+    margin-top: 3rem;
+}
+.spp{
+    margin-top: 2rem;
+}
+.form-control{
+    background-color: white!important;
+}
+.form-switch .form-check-input{
+    margin-left: 0px!important;
+    width: 58px!important;
+    height: 27px!important;
+}
+.form-switch{
+    padding-left: 0px!important;
+
+}
