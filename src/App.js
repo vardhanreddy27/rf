@@ -1,13 +1,29 @@
-import React from 'react'
+import {React,useState,useEffect} from 'react'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
 import Categories from './pages/Categories'
 import LoginSignup from './pages/LoginSignup'
 import Signup from './pages/Signup'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PuffLoader from "react-spinners/PuffLoader";
+
 function App() {
+  const [loading, setLoading]= useState(false);
+  useEffect(()=> {
+setLoading(true)
+setTimeout(()=> {
+setLoading(false)
+},2000)
+  }, [])
   return (
     <>
+
+    {
+      loading ?
+      <div className="App">
+
+      <PuffLoader color="rgba(2, 175, 255, 1)"loading={loading} /></div>
+      :
 <BrowserRouter>
       <Routes>
       <Route path="/" element={<Home />}>
@@ -25,7 +41,7 @@ function App() {
           <Route index element={<Signup />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter>}
     </>
   )
 }
