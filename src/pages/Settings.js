@@ -56,8 +56,8 @@ Active status</p></div>
     <div className='col-6 mt-4'><h6>Cupons</h6></div>
     <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4'/></div>
     </div>
-    <div className='row mt-4'>
-    <div className='col-12 text-center '><button type="button" className="btn btnred btn-lg md"><h4>logout</h4></button>
+    <div className='row mt-5'>
+    <div className='col-12 text-center '><button type="button" className="btn btnred btn-lg md"><h4 className='hh6'>logout</h4></button>
 </div>
     </div>
 </div>
