@@ -32,7 +32,7 @@ Active status</p></div>
 </div>
 <div className='fluid-container mt-5
  tr'>
-    <div className='row '>
+    <div className='row pt-2'>
     <div className='col-3 mt-4'><FaUserAlt className='float-left ms-4'/></div>
     <div className='col-6 mt-4'><h6>Edit Profile</h6></div>
     <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4' /></div>
