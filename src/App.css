@@ -223,7 +223,7 @@ background-color: #e9ecef66;  }
     width: 21rem;
 }
 .btnred{
-    border: 2px solid red!important;
-    color: red!important;
+    border: 2px solid #ff3838!important;
+    color: #ff3838!important;
 }
-.h66{    margin-bottom: 3px!important;}
+.h66{    margin-bottom: 0px!important;}
