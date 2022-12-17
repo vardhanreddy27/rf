@@ -14,7 +14,7 @@ function Topnav() {
      <div className='left'> <NavLink to="/Categories" activeClassName="active"><FiMenu className='s'/></NavLink> </div> 
     </div>
     <div className="col  text-center">
-    <img src={logo} height={47} className="th"/>
+    <img src={logo} height={47} className="th" alt="logo"/>
     </div>
     <div className="col top d-flex flex-row-reverse">
    <div className='right'>  <BiShoppingBag className='mt-1 mb-1 ss'/><CgProfile  className='m-1 s'/></div> 

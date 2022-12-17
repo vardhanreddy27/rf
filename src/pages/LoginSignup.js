@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import { IoArrowBackOutline } from 'react-icons/io5';
 import { AiFillGoogleSquare } from 'react-icons/ai';
 import { FaFacebookSquare } from 'react-icons/fa';
@@ -6,6 +6,42 @@ import { BsApple } from 'react-icons/bs';
 import {  Link } from 'react-router-dom';
 
 function LoginSignup() {
+  const [uemail, setUemail] = useState("");
+  const onChangeUemail = (e) => {
+    setUemail({ uemail: e.target.value });
+  };const onChangeUpassword = (e) => {
+    setUpassword({ upassword: e.target.value });
+  };  const [upassword, setUpassword] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const signupData = {
+      uemail:uemail,
+      upassword:upassword
+    };
+let merge={...uemail,...upassword};
+   const myJSON = JSON.stringify(merge);
+     console.log(myJSON);
+    fetch("http://localhost:5000/login-user",{
+      method:"POST",
+      crossDomain:true,
+      headers:{
+        "Content-Type":"application/json",
+        Accept:"application/json",
+        "Access-Control-Allow-Orgin":"*",
+      },
+     body:myJSON
+    })
+    .then((res)=>res.json())
+    .then((data)=>{
+      console.log(data,"userlogin");
+      if(data.status=="ok"){
+        alert("login successful");
+        window.localStorage.setItem("token",data.data);
+        // window.location.href="./Home";
+      }
+    });
+  }
   return (
     <div>
           <div className="col top  mt-1"><Link to="/" className="navbar-brand a" >
@@ -17,12 +53,12 @@ function LoginSignup() {
 </div>
 <div className='container mt-5 ps-5 pe-5'>
   <h1>User Log In</h1>
-<form>
+<form onSubmit={onSubmit}>
   <div className="form-group">
-    <input type="email" className="form-control sp p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+    <input type="email"  onChange={onChangeUemail} className="form-control sp p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
   </div>
   <div className="form-group">
-    <input type="password" className="form-control spp  p-3" id="exampleInputPassword1" placeholder="Password" />
+    <input type="password"  onChange={onChangeUpassword} className="form-control spp  p-3" id="exampleInputPassword1" placeholder="Password" />
   </div>
   <nav className="navbar fixed-bottom navbar-light bdr ">
   <div className="container">
@@ -39,7 +75,7 @@ function LoginSignup() {
       <FaFacebookSquare className='sir1'/>
       <BsApple className='sir2'/>
     </div>
-    <div className='col-6 float-right'><button type="button" className="float-right sin btn btn-primary btn-lg">Sign In</button>
+    <div className='col-6 float-right'><button  type="submit" className="float-right sin btn btn-primary btn-lg">Sign In</button>
 </div>
       </div></div></nav>
 </form>

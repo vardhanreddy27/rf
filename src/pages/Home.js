@@ -17,7 +17,7 @@ function Home() {
    <Searchbar />
       <Carousel /> 
    <Features /><div className='container hh mt-2'>
-   <img src={banner} width="100%" height="100%" /></div>
+   <img src={banner} width="100%" height="100%" alt="s" /></div>
    <Offers />
    <Off />
    <Classic />

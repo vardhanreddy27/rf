@@ -1,6 +1,7 @@
 import {React,useState,useEffect} from 'react'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
+import Settings from './pages/Settings'
 import Categories from './pages/Categories'
 import LoginSignup from './pages/LoginSignup'
 import Signup from './pages/Signup'
@@ -39,6 +40,9 @@ setLoading(false)
           <Route index element={<LoginSignup />} />
         </Route><Route path="/Signup" element={<Signup />}>
           <Route index element={<Signup />} />
+        </Route>
+        <Route path="/Settings" element={<Settings />}>
+          <Route index element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>}

@@ -182,8 +182,7 @@ margin-left: 18px;}
     padding-right: 12px!important;
 }
 .under{
-    text-underline-offset: 16px!important;
-    text-decoration: underline 5px #4b96e1!important;
+  
     color: #4b96e1!important;
 }
 .we{font-weight: 700;}
@@ -211,4 +210,16 @@ margin-left: 18px;}
     align-items: center;
     width: 100%;
     height: 100vh;
+}
+.logged-in {
+    color: #0daf0d;
+  }
+  .tr{
+    border-top-left-radius: 50px 30px;
+    border-top-right-radius: 50px 30px;
+    height: 23.7rem;
+background-color: #e9ecef66;  }
+.md{
+    width: 21rem;
+    margin-left: 1.5rem;
 }

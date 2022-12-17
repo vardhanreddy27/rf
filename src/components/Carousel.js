@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import banner1 from "../../src/banner.jpg";
 import banner3 from "../../src/car3.png";
