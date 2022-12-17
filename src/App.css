@@ -221,5 +221,8 @@ margin-left: 18px;}
 background-color: #e9ecef66;  }
 .md{
     width: 21rem;
-    margin-left: 1.5rem;
+}
+.btnred{
+    border: 2px solid red!important;
+    color: red!important;
 }

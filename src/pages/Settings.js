@@ -7,6 +7,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { AiFillHeart } from 'react-icons/ai';
 import { IoDocumentTextSharp } from 'react-icons/io5';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import { TbDiscount2 } from 'react-icons/tb';
 
 function Settings() {
   return (
@@ -50,9 +51,13 @@ Active status</p></div>
     <div className='col-3 mt-4'><IoDocumentTextSharp className='float-left ms-4'/></div>
     <div className='col-6 mt-4'><h6>Order History</h6></div>
     <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4'/></div>
+    </div> <div className='row '>
+    <div className='col-3 mt-4'><TbDiscount2 size="20px" className='float-left ms-4'/></div>
+    <div className='col-6 mt-4'><h6>Cupons</h6></div>
+    <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4'/></div>
     </div>
     <div className='row mt-4'>
-    <div className='col-12 '><button type="button" className="btn bg-danger  btn-lg md"><h4>logout</h4></button>
+    <div className='col-12 text-center '><button type="button" className="btn btnred btn-lg md"><h4>logout</h4></button>
 </div>
     </div>
 </div>
