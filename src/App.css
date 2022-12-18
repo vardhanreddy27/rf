@@ -225,5 +225,7 @@ background-color: #e9ecef66;  }
 .btnred{
     border: 2px solid #ff3838!important;
     color: #ff3838!important;
+    font-weight: 500!important;
+
 }
 .h66{    margin-bottom: 0px!important;}
