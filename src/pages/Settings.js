@@ -25,7 +25,7 @@ function Settings() {
  </div> 
  <div className='row text-center mt-1'>
  <div className='col-12'><h4>vishnu vardhan</h4></div>
- <div className='col'><p><span className="logged-in">● </span>
+ <div className='col'><p><span className="logged-in">• </span>
 Active status</p></div>
  </div>
  </div>

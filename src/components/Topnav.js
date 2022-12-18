@@ -11,13 +11,13 @@ function Topnav() {
      <div className="container mt-1">
   <div className="row">
     <div className="col top">
-     <div className='left'> <NavLink to="/Categories" activeClassName="active"><FiMenu className='s'/></NavLink> </div> 
+     <div className='left'> <NavLink to="/Categories" className="active"><FiMenu className='s'/></NavLink> </div> 
     </div>
     <div className="col  text-center">
     <img src={logo} height={47} className="th" alt="logo"/>
     </div>
     <div className="col top d-flex flex-row-reverse">
-   <div className='right'>  <BiShoppingBag className='mt-1 mb-1 ss'/><CgProfile  className='m-1 s'/></div> 
+   <div className='right'>  <BiShoppingBag className='mt-1 mb-1 ss'/><NavLink to="/LoginSignup"  className="active"><CgProfile  className='m-1 s'/></NavLink></div> 
     </div>
   </div>
 </div></nav>
