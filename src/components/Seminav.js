@@ -5,7 +5,7 @@ import {  Link } from 'react-router-dom';
 
 function Seminav() {
   return (
-    <><nav class="navbar sticky-top  bg-white" >
+    <><nav className="navbar sticky-top  bg-white" >
      <div className="container mt-1">
   <div className="row">
     <div className="col top"><Link to="/" className="navbar-brand a" >

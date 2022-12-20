@@ -10,17 +10,17 @@ function Navbarbottom() {
 <nav className="navbar fixed-bottom navbar-light bg-light">
   <div className="container-fluid">
     <div className='row text-center'>
-    <div className='col '> <NavLink to="/" activeClassName="active">
-<h5 className='pad'><AiOutlineHome activeClassName="active"/></h5>
+    <div className='col '> <NavLink to="/" className="active">
+<h5 className='pad'><AiOutlineHome className="active"/></h5>
 <p className='sos'>   
          Store</p></NavLink></div>
     <div className='col'>
-    <NavLink to="/Categories" activeClassName="active">
-<h5 className='pad'><BiCategory activeClassName="active"/></h5>
+    <NavLink to="/Categories" className="active">
+<h5 className='pad'><BiCategory className="active"/></h5>
     <p className='sos'>Categories</p></NavLink></div>
     <div className='col'>
-    <NavLink to="/LoginSignup" activeClassName="active">
-<h5 className='pad'><CgProfile activeClassName="active"/></h5>
+    <NavLink to="/Cond" className="active">
+<h5 className='pad'><CgProfile className="active"/></h5>
     <p className='sos'> 
    Account</p></NavLink></div>
     </div>

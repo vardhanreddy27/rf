@@ -2,12 +2,13 @@ import {React,useState,useEffect} from 'react'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
+import Cond from './pages/Cond'
 import Categories from './pages/Categories'
 import LoginSignup from './pages/LoginSignup'
 import Signup from './pages/Signup'
+import Login from './pages/Login'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PuffLoader from "react-spinners/PuffLoader";
-
 function App() {
   const [loading, setLoading]= useState(false);
   useEffect(()=> {
@@ -32,7 +33,7 @@ setLoading(false)
         </Route> 
         <Route path="/Profile" element={<Profile />}>
           <Route index element={<Profile />} />
-        </Route>
+        </Route> 
         <Route path="/Categories" element={<Categories />}>
           <Route index element={<Categories />} />
         </Route>
@@ -43,7 +44,14 @@ setLoading(false)
         </Route>
         <Route path="/Settings" element={<Settings />}>
           <Route index element={<Settings />} />
+        </Route> <Route path="/Cond" element={<Cond />}>
+          <Route index element={<Cond />} />
         </Route>
+
+        <Route path="/Login" element={<Login />}>
+          <Route index element={<Login />} />
+        </Route>
+
       </Routes>
     </BrowserRouter>}
     </>
