@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import {React,Component} from "react";
 import profilevideo from '../../src/profile.jpg';
 import {  Link } from 'react-router-dom';
 import { IoArrowBackOutline } from 'react-icons/io5';
@@ -20,6 +20,10 @@ export default class Settings extends Component{
   }
  
 componentDidMount(){
+  const email=localStorage.email;
+  const myname=localStorage.name;
+  const pic=localStorage.pic;
+  console.log(myname)
   fetch("http://localhost:5000/userData",{
     method:"POST",
     crossDomain:true,
@@ -34,7 +38,7 @@ componentDidMount(){
   })
    .then((res)=>res.json())
    .then((data)=>{
-this.setState({userData:data.data});
+    this.setState({userData:data.data});
 
 });
 
@@ -42,6 +46,7 @@ this.setState({userData:data.data});
 
 Logout = () => {
   localStorage.removeItem("token");
+  localStorage.removeItem("email");
   window.location.href="./";
 
 };
@@ -60,7 +65,7 @@ render(){
     <div className='col'><img width="150" height="150" src={profilevideo} alt="profile" />
  </div> 
  <div className='row text-center mt-1'>
- <div className='col-12'><h4>     {this.state.userData.uname}</h4></div>
+ <div className='col-12'><h4>     {this.state.userData.uname} </h4></div>
  <div className='col'><p><span className="logged-in">● </span>
 Active status</p></div>
  </div>

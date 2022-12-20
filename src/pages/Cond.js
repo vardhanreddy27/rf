@@ -3,7 +3,7 @@ import LoginSignup from './LoginSignup';
 import Settings from './Settings';
 
 function Cond(props) {
-const x=localStorage.token;
+const x=localStorage.email;
     if (x!==undefined) {
           return  <Settings />
     }
