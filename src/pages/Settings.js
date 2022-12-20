@@ -16,6 +16,7 @@ export default class Settings extends Component{
     super(props);
     this.state = {
       userData: "",
+      myname:"",
     };
   }
  
@@ -23,7 +24,10 @@ componentDidMount(){
   const email=localStorage.email;
   const myname=localStorage.name;
   const pic=localStorage.pic;
-  console.log(myname)
+  this.setState({ myname:myname})
+  this.setState({ pic:pic})
+
+console.log(myname)  
   fetch("http://localhost:5000/userData",{
     method:"POST",
     crossDomain:true,
@@ -62,10 +66,10 @@ render(){
 <h2>Profile</h2>    </div>
     </div>
     <div className='row text-center mt-4'>
-    <div className='col'><img width="150" height="150" src={profilevideo} alt="profile" />
+    <div className='col'><img width="150" height="150" src={(this.state.pic)||(profilevideo)} className="rounded-circle" alt="profile" />
  </div> 
  <div className='row text-center mt-1'>
- <div className='col-12'><h4>     {this.state.userData.uname} </h4></div>
+ <div className='col-12'><h4>     {(this.state.userData.uname)||(this.state.myname)} </h4></div>
  <div className='col'><p><span className="logged-in">● </span>
 Active status</p></div>
  </div>

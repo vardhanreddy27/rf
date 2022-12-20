@@ -88,7 +88,7 @@ window.location.href="./";
   }}
       onError={(err) => console.log(err)}
     >
-      <button>Google Login</button>
+      <button className="google"></button>
     </GoogleLogin>
     </div>
     <div className='col-6 float-right'><button  type="submit" className="float-right sin btn btn-primary btn-lg">Sign In</button>
