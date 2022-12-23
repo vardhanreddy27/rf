@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { IoArrowBackOutline } from 'react-icons/io5';
-import { AiFillGoogleSquare } from 'react-icons/ai';
-import { FaFacebookSquare } from 'react-icons/fa';
-import { BsApple } from 'react-icons/bs';
 import {  Link } from 'react-router-dom';
 import { GoogleLogin } from 'google-login-react';
-
+import googlepic from '../../src/google.png';
 
 function LoginSignup() {
   const [pic,setPic]= useState("");
@@ -88,7 +85,8 @@ window.location.href="./";
   }}
       onError={(err) => console.log(err)}
     >
-      <button className="google"></button>
+      <div className="col-1 d-inline p-3"><img src={googlepic} className="mt-1"alt="ss"/></div>
+      <div className="col-11 d-inline"><p className="d-inline myst">Sign in</p></div>
     </GoogleLogin>
     </div>
     <div className='col-6 float-right'><button  type="submit" className="float-right sin btn btn-primary btn-lg">Sign In</button>

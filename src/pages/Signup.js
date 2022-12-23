@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { IoArrowBackOutline } from 'react-icons/io5';
-import { AiFillGoogleSquare } from 'react-icons/ai';
-import { FaFacebookSquare } from 'react-icons/fa';
-import { BsApple } from 'react-icons/bs';
+import { GoogleLogin } from 'google-login-react';
 import {  Link } from 'react-router-dom';
+import googlepic from '../../src/google.png';
+
 function Signup() {
   const [uname, setUname] = useState("");
   const [uemail, setUemail] = useState("");
   const [unumber, setUnumber] = useState("");
   const [upassword, setUpassword] = useState("");
-
+  const [pic,setPic]= useState("");
   const onChangeUname = (e) => {
     setUname({ uname: e.target.value });
   };
@@ -88,9 +88,23 @@ let merge={...uname,...uemail,...unumber,...upassword};
         <hr />
     <div className='row mypcd'>
     <div className='col-6 '>
-      <AiFillGoogleSquare className='sir'/>
-      <FaFacebookSquare className='sir1'/>
-      <BsApple className='sir2'/>
+    <GoogleLogin
+      clientId='138949418546-q56sjf702pnfvp5e1sun4af79jq5f5mr.apps.googleusercontent.com'
+      onSuccess={function senddata(res){
+setUemail(res.email);
+setUname(res.name);
+setPic(res.picture);
+window.localStorage.setItem("email",res.email);
+window.localStorage.setItem("name",res.name);
+window.localStorage.setItem("pic",res.picture);
+window.location.href="./";
+
+  }}
+      onError={(err) => console.log(err)}
+    >
+      <div className="col-1 d-inline p-3"><img src={googlepic} className="mt-1"alt="ss"/></div>
+      <div className="col-11 d-inline"><p className="d-inline myst">Sign up</p></div>
+    </GoogleLogin>
     </div>
     <div className='col-6 float-right'><button  type="submit" className="float-right sin btn btn-primary btn-lg">Sign Up</button>
 </div>

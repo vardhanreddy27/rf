@@ -19,12 +19,11 @@ color: #df5c5c;
     padding: 5px;
     margin-left: 0.7rem;
     border-radius: 4px;
+}.myst{
+    margin-top: 10px!important;
+    position: fixed;
 }
-.google{
-    height: 3rem!important;
-    width: 98%!important;
-    border: black;
-    background: url('./google.png') no-repeat}
+
 .sir1{
     color: #364ca4;
     width: 3rem!important;
