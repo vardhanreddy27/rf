@@ -84,21 +84,21 @@ Active status</p></div>
     </div>
     <div className='row '>
     <div className='col-3 mt-4'><FaMapMarkerAlt className='float-left ms-4'/></div>
-    <div className='col-6 mt-4'><h6>Shipping Address</h6></div>
+    <div className='col-6 mt-4'><Link to="/Shipping" className="colb" ><h6>Shipping Address</h6></Link></div>
     <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4'/></div>
     </div>
     <div className='row '>
     <div className='col-3 mt-4'><AiFillHeart className='float-left ms-4'/></div>
-    <div className='col-6 mt-4'><h6>Wishlist</h6></div>
+    <div className='col-6 mt-4'><Link to="/Wishlist" className="colb" ><h6>Wishlist</h6></Link></div>
     <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4'/></div>
     </div>
     <div className='row '>
     <div className='col-3 mt-4'><IoDocumentTextSharp className='float-left ms-4'/></div>
-    <div className='col-6 mt-4'><h6>Order History</h6></div>
+    <div className='col-6 mt-4'><Link to="/Orders" className="colb" ><h6>Order History</h6></Link></div>
     <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4'/></div>
     </div> <div className='row '>
     <div className='col-3 mt-4'><TbDiscount2 size="20px" className='float-left ms-4'/></div>
-    <div className='col-6 mt-4'><h6>Coupons</h6></div>
+    <div className='col-6 mt-4'><Link to="/Coupons" className="colb" ><h6>Coupons</h6></Link></div>
     <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4'/></div>
     </div>
     <div className='row mt-5'>

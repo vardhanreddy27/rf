@@ -6,6 +6,10 @@ import Cond from './pages/Cond'
 import Categories from './pages/Categories'
 import LoginSignup from './pages/LoginSignup'
 import Signup from './pages/Signup'
+import Coupons from '../src/components/Coupons'
+import Shipping from '../src/components/Shipping'
+import Orders from '../src/components/Orders'
+import Wishlist from '../src/components/Wishlist'
 import Login from './pages/Login'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PuffLoader from "react-spinners/PuffLoader";
@@ -51,7 +55,18 @@ setLoading(false)
         <Route path="/Login" element={<Login />}>
           <Route index element={<Login />} />
         </Route>
-
+        <Route path="/Coupons" element={<Coupons />}>
+          <Route index element={<Coupons />} />
+        </Route>
+        <Route path="/Shipping" element={<Shipping />}>
+          <Route index element={<Shipping />} />
+        </Route>
+        <Route path="/Wishlist" element={<Wishlist />}>
+          <Route index element={<Wishlist />} />
+        </Route>
+        <Route path="/Orders" element={<Orders />}>
+          <Route index element={<Orders />} />
+        </Route>
       </Routes>
     </BrowserRouter>}
     </>

@@ -8,9 +8,15 @@ export default class Profile extends Component{
     super(props);
     this.state = {
       userData: "",
+      myname:"",
     };
   }
 componentDidMount(){
+  const email=localStorage.email;
+  const myname=localStorage.name;
+  this.setState({ myname:myname})
+  this.setState({ email:email})
+
   fetch("http://localhost:5000/userData",{
     method:"POST",
     crossDomain:true,
@@ -45,22 +51,23 @@ render(){
     <form>
 
     <div className="form-group">
-    <input type="text" required className="form-control spp p-3" id="exampleInputName" aria-describedby="name" placeholder={this.state.userData.uname} value={this.state.userData.uname}
+    <input type="text" required className="form-control spp p-3" id="exampleInputName" aria-describedby="name" placeholder= {(this.state.userData.uname)||(this.state.myname)} value= {(this.state.userData.uname)||(this.state.myname)}
+
+ />
+  </div>
+  
+  <div className="form-group">
+    <input type="email" required  className="form-control p-3" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder=       {this.state.userData.uemail||(this.state.email)} value=       {this.state.userData.uemail||(this.state.email)}
 
  />
   </div>
   <div className="form-group">
-    <input type="number" required  className="form-control p-3" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder=  {this.state.userData.unumber} value=       {this.state.userData.unumber}
+    <input type="number" required  className="form-control p-3" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder=  {this.state.userData.unumber ||"Enter number"} value=       {this.state.userData.unumber}
 
  />
   </div>
 
 
-  <div className="form-group">
-    <input type="email" required  className="form-control p-3" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder=       {this.state.userData.uemail} value=       {this.state.userData.uemail}
-
- />
-  </div>
   <div className="form-group">
     <input type="password" required className="form-control p-3" id="exampleInputPassword1" placeholder="New Password" />
   </div>  <div className="form-group">
