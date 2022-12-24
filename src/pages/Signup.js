@@ -55,6 +55,8 @@ let merge={...uname,...uemail,...unumber,...upassword};
     .then((res)=>res.json())
     .then((data)=>{
       if(data.status=="OK"){
+        window.localStorage.setItem("email",uemail);
+
         console.log(data,"userRegister");
         window.location.href="./";
 
@@ -115,7 +117,7 @@ setPic(res.picture);
 window.localStorage.setItem("email",res.email);
 window.localStorage.setItem("name",res.name);
 window.localStorage.setItem("pic",res.picture);
- window.location.href="./";
+window.location.href="./";
 gsignup(pic,uname,uemail);
  }}
       onError={(err) => console.log(err)}

@@ -79,7 +79,7 @@ Active status</p></div>
  tr'>
     <div className='row pt-3'>
     <div className='col-3 mt-4'><FaUserAlt className='float-left ms-4'/></div>
-    <div className='col-6 mt-4'><h6>Edit Profile</h6></div>
+    <div className='col-6 mt-4'><Link to="/Profile" className="colb" ><h6>Edit Profile</h6></Link></div>
     <div className='col-3 mt-4'><IoIosArrowForward className='float-right me-4' /></div>
     </div>
     <div className='row '>

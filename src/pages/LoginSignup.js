@@ -38,6 +38,8 @@ let merge={...uemail,...upassword};
       console.log(data,"userlogin");
       if(data.status=="ok"){
         window.localStorage.setItem("token",data.data);
+        window.localStorage.setItem("email",data.email);
+
         window.location.href="./";
       }
     });

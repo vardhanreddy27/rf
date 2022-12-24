@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Topnav from '../components/Topnav'
 import Navbarbottom from '../components/Navbarbottom';
+import {  Link } from 'react-router-dom';
+import { IoArrowBackOutline } from 'react-icons/io5';
 
 export default class Profile extends Component{
   constructor(props) {
@@ -32,9 +33,44 @@ this.setState({userData:data.data});
 render(){
   return (
     <>
-       <Topnav />
+      <div className="top row mt-1">
+     <div className='left col-4'>
+        <Link to="/Settings" className="navbar-brand a" ><IoArrowBackOutline className='s left'/></Link> 
+          </div>     
+    <div className='col-4 text-center'> 
+<h2>Account</h2>    </div>
+    </div>
    
-       {this.state.userData.uname}
+<div className="container mt-5">
+    <form>
+
+    <div className="form-group">
+    <input type="text" required className="form-control spp p-3" id="exampleInputName" aria-describedby="name" placeholder={this.state.userData.uname} value={this.state.userData.uname}
+
+ />
+  </div>
+  <div className="form-group">
+    <input type="number" required  className="form-control p-3" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder=  {this.state.userData.unumber} value=       {this.state.userData.unumber}
+
+ />
+  </div>
+
+
+  <div className="form-group">
+    <input type="email" required  className="form-control p-3" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder=       {this.state.userData.uemail} value=       {this.state.userData.uemail}
+
+ />
+  </div>
+  <div className="form-group">
+    <input type="password" required className="form-control p-3" id="exampleInputPassword1" placeholder="New Password" />
+  </div>  <div className="form-group">
+    <input type="password" required className="form-control p-3" id="exampleInputPassword1" placeholder="Confirm Password" />
+  </div>
+  <div className="form-group">
+  <button type="button" className="btn btn-primary btn-lg btn-block">Update</button>
+  </div>
+
+</form></div>
 
 
     <Navbarbottom />
