@@ -1,13 +1,9 @@
-import { CountryField, StateField, VisitorAPIComponents } from 'react-country-state-fields';
 import React, { useState } from 'react';
 import {  Link } from 'react-router-dom';
 
 import { IoArrowBackOutline } from 'react-icons/io5';
 function Shipping() {
-  const [country, setCountry] = useState({}); // the selected country
-  const [state, setState] = useState({}); // the selected state
-  const visitorApiPrjectId = ""; // assign your project ID here
-
+ 
   return (
     < div className='container'>  <div className="container top">
     <div className="top row mt-1">
@@ -20,21 +16,17 @@ function Shipping() {
  
 </div>
 <form>
-<VisitorAPIComponents projectId={visitorApiPrjectId} handleCountryChange={(countryObj) => setCountry(countryObj)} handleStateChange={(stateObj) => setState(stateObj)}>
-      <CountryField label="Country/Territory"></CountryField>
-      <StateField label="State/Province"></StateField>
-    </VisitorAPIComponents>
 <div className="form-group">
 <input type="text" required className="form-control spp p-3"  placeholder= "Enter Name"/>
 </div>
 
 <div className="form-group">
-<input type="text" required  className="form-control p-3" placeholder='Enter Country'
+<input type="text" required  className="form-control p-3" value="India"
 
 />
 </div>
 <div className="form-group">
-<input type="text" required  className="form-control p-3"  placeholder= "State"
+<input type="text" required  className="form-control p-3"  placeholder= "Enter State"
 
 />
 </div>
