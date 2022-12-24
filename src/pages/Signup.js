@@ -3,18 +3,11 @@ import { IoArrowBackOutline } from 'react-icons/io5';
 import { GoogleLogin } from 'google-login-react';
 import {  Link } from 'react-router-dom';
 import googlepic from '../../src/google.png';
-import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
-const MySwal = withReactContent(Swal);
-
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+const MySwal = withReactContent(Swal)
 
 function Signup() {
-  const popup = () => (
-    MySwal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'email already exist',
-    }))
   const [uname, setUname] = useState("");
   const [uemail, setUemail] = useState("");
   const [unumber, setUnumber] = useState("");
@@ -32,7 +25,12 @@ function Signup() {
   const onChangeUpassword = (e) => {
     setUpassword({ upassword: e.target.value });
   };
-
+const popup = () =>{
+  MySwal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Email already exist',  
+  })}
   const onSubmit = (e) => {
     e.preventDefault();
     const signupData = {
@@ -43,7 +41,7 @@ function Signup() {
     };
 let merge={...uname,...uemail,...unumber,...upassword};
    const myJSON = JSON.stringify(merge);
-     console.log(myJSON);
+
     fetch("http://localhost:5000/register",{
       method:"POST",
       crossDomain:true,
@@ -56,17 +54,20 @@ let merge={...uname,...uemail,...unumber,...upassword};
     })
     .then((res)=>res.json())
     .then((data)=>{
-      if(data=="ok"){
+      if(data.status=="OK"){
         console.log(data,"userRegister");
         window.location.href="./";
 
       }else{
-        popup();  
+        popup();
       }
 
     });
   };
- 
+  const gsignup = (pic,uname,uemail) =>{
+
+console.log(pic,uname,uemail);
+  }
   return (
     <div>
           <div className="col top  mt-1"><Link to="/" className="navbar-brand a" >
@@ -114,9 +115,9 @@ setPic(res.picture);
 window.localStorage.setItem("email",res.email);
 window.localStorage.setItem("name",res.name);
 window.localStorage.setItem("pic",res.picture);
-window.location.href="./";
-
-  }}
+ window.location.href="./";
+gsignup(pic,uname,uemail);
+ }}
       onError={(err) => console.log(err)}
     >
       <div className="col-1 d-inline p-3"><img src={googlepic} className="mt-1"alt="ss"/></div>
