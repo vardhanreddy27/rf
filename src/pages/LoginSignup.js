@@ -55,10 +55,10 @@ let merge={...uemail,...upassword};
   <h1>User Log In</h1>
 <form onSubmit={onSubmit}>
   <div className="form-group">
-    <input type="email"  onChange={onChangeUemail} className="form-control sp p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+    <input type="email" required onChange={onChangeUemail} className="form-control sp p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
   </div>
   <div className="form-group">
-    <input type="password"  onChange={onChangeUpassword} className="form-control spp  p-3" id="exampleInputPassword1" placeholder="Password" />
+    <input type="password" required onChange={onChangeUpassword} className="form-control spp  p-3" id="exampleInputPassword1" placeholder="Password" />
   </div>
   <nav className="navbar fixed-bottom navbar-light bdr ">
   <div className="container">

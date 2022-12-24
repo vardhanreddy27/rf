@@ -3,8 +3,18 @@ import { IoArrowBackOutline } from 'react-icons/io5';
 import { GoogleLogin } from 'google-login-react';
 import {  Link } from 'react-router-dom';
 import googlepic from '../../src/google.png';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+const MySwal = withReactContent(Swal);
+
 
 function Signup() {
+  const popup = () => (
+    MySwal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'email already exist',
+    }))
   const [uname, setUname] = useState("");
   const [uemail, setUemail] = useState("");
   const [unumber, setUnumber] = useState("");
@@ -46,10 +56,17 @@ let merge={...uname,...uemail,...unumber,...upassword};
     })
     .then((res)=>res.json())
     .then((data)=>{
-      console.log(data,"userRegister");
+      if(data=="ok"){
+        console.log(data,"userRegister");
+        window.location.href="./";
+
+      }else{
+        popup();  
+      }
+
     });
   };
-
+ 
   return (
     <div>
           <div className="col top  mt-1"><Link to="/" className="navbar-brand a" >
@@ -63,26 +80,26 @@ let merge={...uname,...uemail,...unumber,...upassword};
   <h1>Create an account</h1>
 <form onSubmit={onSubmit}><div className='row'>
     <div className='col-6 ppp'><div className="form-group">
-    <input type="text" className="form-control spp p-3" onChange={onChangeUname} id="exampleInputName" aria-describedby="name" placeholder="Enter name" />
+    <input type="text" required className="form-control spp p-3" onChange={onChangeUname} id="exampleInputName" aria-describedby="name" placeholder="Enter name" />
   </div></div>
   <div className='col-6'><div className="form-group">
-    <input type="email" onChange={onChangeUemail} className="form-control spp p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+    <input type="number" required onChange={onChangeUnumber} className="form-control spp p-3" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder="Enter number" />
   </div></div>  </div>
   <div className="form-group">
-    <input type="number" onChange={onChangeUnumber} className="form-control p-3" id="exampleInputNumber" aria-describedby="NumberHelp" placeholder="Enter number" />
+    <input type="email" required onChange={onChangeUemail} className="form-control p-3" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Enter email" />
   </div>
   <div className="form-group">
-    <input type="password" className="form-control p-3" id="exampleInputPassword1" placeholder="Create Password" />
+    <input type="password" required className="form-control p-3" id="exampleInputPassword1" placeholder="Create Password" />
   </div>
   <div className="form-group">
-    <input type="password" onChange={onChangeUpassword} className="form-control  p-3" id="exampleInputPassword12" placeholder="Confirm Password" />
+    <input type="password" required onChange={onChangeUpassword} className="form-control  p-3" id="exampleInputPassword12" placeholder="Confirm Password" />
   </div>
   <nav className="navbar fixed-bottom navbar-light bdr ">
   <div className="container">
   <div className='row'>
   <div className='col-10 mypcd1  bg-white ps-2'>agree to terms and conditions</div>
   <div className='col-2'><div className="  form-check form-switch">
-  <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+  <input className="form-check-input" type="checkbox" required id="flexSwitchCheckDefault" />
 </div></div>
         </div>
         <hr />
