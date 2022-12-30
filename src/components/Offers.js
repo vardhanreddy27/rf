@@ -5,6 +5,7 @@ import jeans from '../../src/jeans.png';
 import night from '../../src/night.png';
 import kurta from '../../src/kurta.png';
 import winter from '../../src/winter.png';
+import {  Link } from 'react-router-dom';
 
 
 function Offers() {
@@ -14,7 +15,7 @@ function Offers() {
 <h6 className='font fcolor'>OFFERS LIKE NEVER BEFORE </h6>
 
 <div className='row mt-3'>
-<div className="col"><img src={tshirt} alt="t shirts" width="100%" height="100%" /></div>
+<div className="col"><Link to='/Tshirt'><img src={tshirt} alt="t shirts" width="100%" height="100%" /></Link></div>
 <div className="col"><img src={tops} alt="top" width="100%" height="100%" /></div>
 <div className="col"><img src={jeans} alt="jeans" width="100%" height="100%" /></div>
 </div>

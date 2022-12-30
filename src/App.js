@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
 import Cond from './pages/Cond'
+import Tshirt from './pages/Tshirt'
 import Categories from './pages/Categories'
 import LoginSignup from './pages/LoginSignup'
 import Signup from './pages/Signup'
@@ -66,6 +67,9 @@ setLoading(false)
         </Route>
         <Route path="/Orders" element={<Orders />}>
           <Route index element={<Orders />} />
+        </Route>  
+             <Route path="/Tshirt" element={<Tshirt />}>
+          <Route index element={<Tshirt />} />
         </Route>
       </Routes>
     </BrowserRouter>}
