@@ -2,6 +2,11 @@ import React from 'react'
 import Dnav from '../components/Dnav'
 import Sort from '../components/Sort'
 import red from '../../src/red.jpg'
+import orange from '../../src/orange.jpg'
+import black from '../../src/black.jpg'
+import yellow from '../../src/yellow.jpg'
+import pink from '../../src/pink.jpg'
+import blue from '../../src/blue.jpg'
 import { AiOutlineHeart } from 'react-icons/ai';
 
 function Tshirt() {
@@ -14,7 +19,7 @@ function Tshirt() {
 
 </div>
 <div className='col-6'>
-<img src={red} alt='a' width='99%' />
+<img src={yellow} alt='a' width='100%' height="100%" />
 
 </div>
 </div>
@@ -40,11 +45,11 @@ function Tshirt() {
 </div>
 <div className='row mt-3'>
 <div className='col-6'>
-    <img src={red} alt='a' className='' width='99%' />
+    <img src={pink} alt='a' className='' height='87.5%' width='99%' />
 
 </div>
 <div className='col-6'>
-<img src={red} alt='a' width='99%' />
+<img src={blue} alt='a' width='100%'  height='87.5%'/>
 
 </div>
 </div>
@@ -70,11 +75,11 @@ function Tshirt() {
 </div>
 <div className='row mt-3'>
 <div className='col-6'>
-    <img src={red} alt='a' className='' width='99%' />
+    <img src={black} alt='a'height='100%' className='' width='99%' />
 
 </div>
 <div className='col-6'>
-<img src={red} alt='a' width='99%' />
+<img src={orange} alt='a' width='100%' />
 
 </div>
 </div>
