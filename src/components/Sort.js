@@ -10,11 +10,11 @@ function Sort() {
       <div className='row'>
 
 <div className='col-4 '>
-    SORT BY <p>popularity</p>
+   <p className='mypc1'>SORT BY </p> <p>popularity</p>
 </div>
 <div className='col-1'><BsSortDownAlt  className='mt-1 mb-1 ss mt-3' /></div>
 <div className='col-1 ms-4 border-left'></div><div className='col-4'>
-  FILTER <p>apply filter</p></div>
+  <p className='mypc1'>FILTER</p> <p>apply filter</p></div>
     <div className='col-1 '><GoSettings className='mt-1 mb-1 ss mt-3' /></div>
 </div>
 
