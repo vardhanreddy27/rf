@@ -10,7 +10,7 @@ function Sort() {
       <div className='row'>
 
 <div className='col-4 '>
-   <p className='mypc1'>SORT BY </p> <p>popularity</p>
+   <p className='mypc1 ms-2'>SORT BY </p> <p className='ms-2'>popularity</p>
 </div>
 <div className='col-1'><BsSortDownAlt  className='mt-1 mb-1 ss mt-3' /></div>
 <div className='col-1 ms-4 border-left'></div><div className='col-4'>
