@@ -2,7 +2,7 @@ import {React,useState} from 'react'
 import Dnav from '../components/Dnav'
 import Sort from '../components/Sort'
 import { AiFillHeart } from 'react-icons/ai';
-
+import { Link } from 'react-router-dom';
 import red from '../../src/red.jpg'
 import orange from '../../src/orange.jpg'
 import black from '../../src/black.jpg'
@@ -26,12 +26,12 @@ function Tshirt() {
     <Dnav page="T Shirts"/>
     <div className='row'>
 <div className='col-6'>
-    <img src={red} alt='a' className='' width='99%' />
-
+<Link to='/Product'> <img src={red} alt='a' className='' width='99%' />
+</Link>
 </div>
 <div className='col-6'>
-<img src={yellow} alt='a' width='100%' height="100%" />
-
+<Link to='/Product'><img src={yellow} alt='a' width='100%' height="100%" />
+</Link> 
 </div>
 </div>
 <div className='row ms-1 mt-2'>

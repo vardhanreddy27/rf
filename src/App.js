@@ -6,6 +6,7 @@ import Cond from './pages/Cond'
 import Tshirt from './pages/Tshirt'
 import Categories from './pages/Categories'
 import LoginSignup from './pages/LoginSignup'
+import Product from './pages/Product'
 import Signup from './pages/Signup'
 import Coupons from '../src/components/Coupons'
 import Shipping from '../src/components/Shipping'
@@ -70,6 +71,9 @@ setLoading(false)
         </Route>  
              <Route path="/Tshirt" element={<Tshirt />}>
           <Route index element={<Tshirt />} />
+        </Route>
+        <Route path="/Product" element={<Product />}>
+          <Route index element={<Product />} />
         </Route>
       </Routes>
     </BrowserRouter>}

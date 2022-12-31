@@ -260,3 +260,19 @@ background-color: #e9ecef66;  }
 .nnn{
     font-size: small;
 }
+.lkm{
+    
+    display: flex;
+    position: absolute;
+    z-index: 11;
+    height: 50%;
+    margin-top: -67px;
+
+}
+
+.test{
+    background-color: white;
+    border-radius: 25px;
+    height: 30px;
+    padding: 6px;
+}
