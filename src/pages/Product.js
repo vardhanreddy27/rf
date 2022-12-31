@@ -3,8 +3,10 @@ import { IoArrowBackOutline } from 'react-icons/io5';
 import { BiShoppingBag } from 'react-icons/bi';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { IoShareOutline } from 'react-icons/io5';
+import { BsStarFill } from 'react-icons/bs';
+import { BsStarHalf } from 'react-icons/bs';
 import {  Link } from 'react-router-dom';
-import pink from '../../src/pink.jpg'
+import red from '../../src/red.jpg'
 
 function Product() {
   return (
@@ -12,7 +14,7 @@ function Product() {
 <nav className="navbar sticky-top" >
      <div className="container">
   <div className="row">
-    <div className="col top"><Link to="/" className="navbar-brand a" >
+    <div className="col top"><Link to="/Tshirt" className="navbar-brand a" >
      <div className='left'><IoArrowBackOutline className='s test'/></div> </Link> 
     </div>
     <div className="col  text-center">
@@ -22,7 +24,20 @@ function Product() {
     </div>
   </div>
 </div></nav>
-<img src={pink} alt='a' className='lkm' height='100%' width='100%' />
+<img src={red} alt='a' className='lkm' height='100%' width='100%' />
+<div className='row mt5'>
+  <div className='container'>
+<div className='col-12'>
+   <h3 className='mypc1 mn'> roadster  <BsStarFill className='ms-1' color='#FFD700' size={15}/>
+   <BsStarFill className='ms-1' color='#FFD700' size={15}/>
+   <BsStarFill className='' color='#FFD700' size={15}/>
+   <BsStarFill className='' color='#FFD700' size={15}/>
+   <BsStarHalf className='' color='#FFD700' size={15}/></h3>
+   <p className=''>Pure Cotton Boxy Plain Round Neck T-shirt</p>
+   <s className='text-secondary'>₹499</s><p className='mypc1 d-inline'>  ₹224</p><p className='d-inline text-success'> 45% OFF</p>
+   
+   </div>
+</div></div>
 
     </>
   )

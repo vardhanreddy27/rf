@@ -41,7 +41,9 @@ function Tshirt() {
 <div className='col-10'>
    <h6 className='mypc1 mn'> roadster</h6>
    <p>Round Neck T-shirt</p>
-   <s className='text-secondary'>₹499</s><p className='mypc1 d-inline'>  ₹224</p><p className='d-inline text-success'> 45% OFF</p></div>
+   <s className='text-secondary'>₹499</s><p className='mypc1 d-inline'>  ₹224</p><p className='d-inline text-success'> 45% OFF</p>
+   
+   </div>
      <div className='col-2'>
      <button className='bco' onClick={() => setIsActive(!isActive)}>{isActive ? activeIcon : inactiveIcon}
 </button></div></div></div>
