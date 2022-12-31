@@ -20,7 +20,7 @@ function Tshirt() {
     const [is5Active, setIs5Active] = useState(false);
 
     var activeIcon=<AiFillHeart  color="red"/>;
-    var inactiveIcon=<AiOutlineHeart />;
+    var inactiveIcon=<AiOutlineHeart className='stc' />;
   return (
     <>
     <Dnav page="T Shirts"/>
