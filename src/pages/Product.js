@@ -42,7 +42,11 @@ function Product() {
 </div>
 <div className='bcolor mt-2 mb-2'></div>
 <div className='container'>
-  <p className='font-weight-bold'>selec size</p>
+  <p className='font-weight-bold mb-2'>selec size</p>
+  <input type='radio' className='m-1 sz' name='a' checked/> <span className='spa'>S</span>
+  <input type='radio' className='m-1 sz' name='a'/><span className='spa'>M</span>
+  <input type='radio' className='m-1 sz' name='a'/><span className='spas'>L</span>
+  <input type='radio' className='m-1 sz' name='a'/><span className='spa'>XL</span>
 </div>
 </div>
 
