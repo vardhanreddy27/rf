@@ -278,3 +278,11 @@ background-color: #e9ecef66;  }
     height: 30px;
     padding: 6px;
 }
+.rem{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+.bcolor{
+    height: 20px!important;
+    background-color: #4444443b;
+}
