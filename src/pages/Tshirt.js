@@ -58,16 +58,15 @@ else{
 </div>
 <div className='row mt-3'>
 <div className='col-6'>
-    <img src={pink} alt='a' className='' height='87.5%' width='99%' />
+    <img src={pink} alt='a' className='' height='100%' width='99%' />
 
 </div>
 <div className='col-6'>
-<img src={blue} alt='a' width='100%'  height='87.5%'/>
+<img src={blue} alt='a' width='100%'  height='100%'/>
 
 </div>
 </div>
 <div className='row ms-1 mt-2'>
-    
 <div className='col-6'>
 <div className='row'>
 <div className='col-10'>
@@ -117,7 +116,8 @@ else{
    <s className='text-secondary'>₹399</s><p className='mypc1 d-inline'>  ₹245</p><p className='d-inline text-success'> 19% OFF</p></div>
      <div className='col-2'>
      <button className='bco' onClick={checks}>
- <AiOutlineHeart className='mt-1 mb-1 stc'/></button></div></div>
+ <AiOutlineHeart className='mt-1 mb-1 stc'/></button>
+ </div></div>
 </div>
 </div>
 <div className='mtp'>s</div>
