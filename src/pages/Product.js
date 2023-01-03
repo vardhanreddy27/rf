@@ -89,7 +89,8 @@ function Product() {
   <button onClick={changeoption2} style={{ backgroundColor: large ? "#dcdcdc" : "white" }}className='rounded-circle size'>L</button>
   <button onClick={changeoption3} style={{ backgroundColor: extra ? "#dcdcdc" : "white" }}className='rounded-circle size'>XL</button>
 </div>
-{click ?<div className='container'>< div className='col'><s className='text-secondary '>₹499 </s><p className='mypc1 '>  ₹224 </p><p className=' text-success d-inline'> 45% OFF</p></div>
+{click ?<div className='container'>< div className='col'>   <s className='text-secondary'>₹499</s><p className='mypc1 dd d3d d-inline'>  ₹224</p><p className='d-inline text-success'> 45% OFF</p>
+</div>
 <div className='col d3d'>Delivery within 4 days</div></div>:''}
 </div>
 <Shopbnav />
