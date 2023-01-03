@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react';
 import { IoArrowBackOutline } from 'react-icons/io5';
 import { BiShoppingBag } from 'react-icons/bi';
 import { AiOutlineHeart } from 'react-icons/ai';
@@ -9,8 +9,46 @@ import {  Link } from 'react-router-dom';
 import red from '../../src/red.jpg'
 
 function Product() {
+  const [click, setClick] = useState(false);
+  const [small, setSmall] = useState(false);
+  const [medium, setMedium] = useState(false);
+  const [large, setLarge] = useState(false);
+  const [extra, setExtra] = useState(false);
+
+
   function changeoption(){
-    console.log('clikced');
+    setClick(true);
+    setSmall(true);
+    setMedium(false);
+    setLarge(false);
+    setExtra(false)
+
+
+  }
+  function changeoption1(){
+    setClick(true);
+    setSmall(false);
+    setMedium(true);
+    setLarge(false);
+    setExtra(false)
+
+  }
+  function changeoption2(){
+    setClick(true);
+    setSmall(false);
+    setLarge(true);
+    setMedium(false);
+    setExtra(false);
+
+  }
+  function changeoption3(){
+    setClick(true);
+    setSmall(false);
+    setExtra(true);
+    setMedium(false);
+    setLarge(false);
+  
+
   }
   return (
     <>
@@ -39,18 +77,19 @@ function Product() {
    <p className=''>Pure Cotton Boxy Plain Round Neck T-shirt</p>
    <s className='text-secondary'>₹499</s><p className='mypc1 d-inline'>  ₹224</p><p className='d-inline text-success'> 45% OFF</p>
    <p className='text-secondary'>inclusive of all taxes</p>
-   <p className='text-danger font-weight-bold'>Only Few Left!</p>
-   
+   <p className='text-danger font-weight-bold'>Only Few Left!</p> 
    </div>
 </div>
 <div className='bcolor mt-2 mb-2'></div>
 <div className='container'>
   <p className='font-weight-bold mb-2'>selec size</p>
-  <button onClick={changeoption} className='rounded-circle size'>S</button>
-  <button onClick={changeoption} className='rounded-circle size'>M</button>
-  <button onClick={changeoption} className='rounded-circle size'>L</button>
-  <button onClick={changeoption} className='rounded-circle size'>XL</button>
+  <button onClick={changeoption} style={{ backgroundColor: small ? "#dcdcdc" : "white" }}className='rounded-circle size'>S</button>
+  <button onClick={changeoption1} style={{ backgroundColor: medium ? "#dcdcdc" : "white" }}className='rounded-circle size'>M</button>
+  <button onClick={changeoption2} style={{ backgroundColor: large ? "#dcdcdc" : "white" }}className='rounded-circle size'>L</button>
+  <button onClick={changeoption3} style={{ backgroundColor: extra ? "#dcdcdc" : "white" }}className='rounded-circle size'>XL</button>
 </div>
+{click ?<div className='container'>< div className='col'><s className='text-secondary '>₹499 </s><p className='mypc1 '>  ₹224 </p><p className=' text-success d-inline'> 45% OFF</p></div>
+<div className='col'>Delivery within 4 days</div></div>:''}
 </div>
 
     </>
