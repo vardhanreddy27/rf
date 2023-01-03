@@ -319,3 +319,8 @@ padding-left: 3px!important;
     margin-bottom: 4px;
 }
 .heart{margin-bottom: 2px;}
+.cheart{margin-bottom: 2px;
+color: rgb(239, 95, 95)!important;}
+.btn-outline{
+    border: #000000 1px solid!important;
+}
