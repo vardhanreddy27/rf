@@ -9,6 +9,9 @@ import {  Link } from 'react-router-dom';
 import red from '../../src/red.jpg'
 
 function Product() {
+  function changeoption(){
+    console.log('clikced');
+  }
   return (
     <>
 <nav className="navbar sticky-top" >
@@ -43,10 +46,10 @@ function Product() {
 <div className='bcolor mt-2 mb-2'></div>
 <div className='container'>
   <p className='font-weight-bold mb-2'>selec size</p>
-  <input type='radio' className='m-1 sz' name='a' checked/> <span className='spa'>S</span>
-  <input type='radio' className='m-1 sz' name='a'/><span className='spa'>M</span>
-  <input type='radio' className='m-1 sz' name='a'/><span className='spas'>L</span>
-  <input type='radio' className='m-1 sz' name='a'/><span className='spa'>XL</span>
+  <button onClick={changeoption} className='rounded-circle size'>S</button>
+  <button onClick={changeoption} className='rounded-circle size'>M</button>
+  <button onClick={changeoption} className='rounded-circle size'>L</button>
+  <button onClick={changeoption} className='rounded-circle size'>XL</button>
 </div>
 </div>
 

@@ -286,36 +286,10 @@ background-color: #e9ecef66;  }
     height: 20px!important;
     background-color: #4444443b;
 }
-input[type='radio'] {
-    width:20px;
-    height:20px;
-    border:0.0001px solid darkgray;
-    border-radius:50%;
-    outline:none;
+.size{
+    width: 3rem;
+    margin: 10px;
+    height: 3rem;
+    background-color: white;
+    border: 1px black solid;
 }
-
-input[type='radio']:before {
-    content:'';
-    display:block;
-    width:100%;
-    height:100%;
-  margin: 0px!important;   
-    border-radius:50%;    
-}
-input[type='radio']:checked:before {
-    background:darkgray;
-}input[type='radio']:checked::after {
-    background:darkgray;
-}
-.sz{
-    height: 54px!important;
-    width: 54px!important;}
-    .spa {
-        position: relative;
-        left: -40px;
-        top: -23px;
-      }   .spas {
-        position: relative;
-        left: -35px;
-        top: -23px;
-      }
